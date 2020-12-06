@@ -1,0 +1,26 @@
+[package]
+name = "pong"
+version = "0.1.0"
+authors = ["GitHub <noreply@github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bootloader = "0.9.8"
+volatile = "0.2.6"
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+spin = "0.7.0"
+pic8259_simple = "0.2.0"
+x86_64 = "0.12.2"
+pc-keyboard = "0.5.1"
+byteorder = { version = "1.2.7", default-features = false }
+libm = "0.2.1"
+fixed = "^0.5"
+mish = "0.1.2"
+
+[profile.dev]
+
+[profile.release]
+
+[profile.test]
